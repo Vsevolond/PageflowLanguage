@@ -71,7 +71,7 @@ status "CodeLanguagesContainer.xcframework.zip created!"
 # copy language queries to package resources
 # set path variables
 CHECKOUTS_PATH="$PWD/DerivedData/SourcePackages/checkouts"
-RESOURCES_PATH="$PWD/Sources/CodeEditLanguages/Resources"
+RESOURCES_PATH="$PWD/Sources/PageflowLanguage/Resources"
 
 # remove previous copied files
 status "Copying language queries to package resources..."

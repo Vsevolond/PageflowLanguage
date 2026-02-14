@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import CodeEditLanguages
+@testable import PageflowLanguage
 import SwiftTreeSitter
 
 final class CodeEditLanguagesTests: XCTestCase {

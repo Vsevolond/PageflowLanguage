@@ -4,12 +4,12 @@
 import PackageDescription
 
 let package = Package(
-    name: "CodeEditLanguages",
+    name: "PageflowLanguage",
     platforms: [.macOS(.v13)],
     products: [
         .library(
-            name: "CodeEditLanguages",
-            targets: ["CodeEditLanguages"]
+            name: "PageflowLanguage",
+            targets: ["PageflowLanguage"]
         ),
     ],
     dependencies: [
@@ -20,7 +20,7 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "CodeEditLanguages",
+            name: "PageflowLanguage",
             dependencies: ["CodeLanguagesContainer", "SwiftTreeSitter"],
             resources: [
                 .copy("Resources")
@@ -35,7 +35,7 @@ let package = Package(
 
         .testTarget(
             name: "CodeEditLanguagesTests",
-            dependencies: ["CodeEditLanguages"]
+            dependencies: ["PageflowLanguage"]
         ),
     ]
 )
