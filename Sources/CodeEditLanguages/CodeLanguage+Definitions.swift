@@ -53,7 +53,8 @@ public extension CodeLanguage {
         .typescript,
         .verilog,
         .yaml,
-        .zig
+        .zig,
+        .pageflow
     ]
 
     /// A language structure for `Agda`
@@ -490,6 +491,17 @@ public extension CodeLanguage {
         extensions: ["txt"],
         lineCommentString: "",
         rangeCommentStrings: ("", "")
+    )
+    
+    /// A language structure for `PageFlow`
+    static let pageflow: CodeLanguage = .init(
+        id: .pageflow,
+        tsName: "pageflow",
+        extensions: ["pf", "pageflow"],
+        lineCommentString: "",
+        rangeCommentStrings: ("", ""),
+        documentationCommentStrings: [],
+        highlights: ["folds", "indents", "locals", "tags"]
     )
 }
 

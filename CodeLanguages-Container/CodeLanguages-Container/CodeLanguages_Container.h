@@ -62,6 +62,7 @@ extern TSLanguage *tree_sitter_typescript();
 extern TSLanguage *tree_sitter_verilog();
 extern TSLanguage *tree_sitter_yaml();
 extern TSLanguage *tree_sitter_zig();
+extern TSLanguage *tree_sitter_pageflow();
 
 #ifdef __cplusplus
 }

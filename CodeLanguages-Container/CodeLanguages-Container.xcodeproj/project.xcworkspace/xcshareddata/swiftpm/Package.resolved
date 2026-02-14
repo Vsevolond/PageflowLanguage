@@ -1,5 +1,5 @@
 {
-  "originHash" : "c940c7467f54711e27ceb0cef308954e1fdbcc20f3dd59d96d6efbe29d7a04ba",
+  "originHash" : "e24c304637bf16834f2bcbc04803ea8a5421a3df30ff2a46e4068a53e4d8e533",
   "pins" : [
     {
       "identity" : "tree-sitter-agda",
@@ -206,6 +206,15 @@
       "state" : {
         "branch" : "master",
         "revision" : "4abfdc1c7af2c6c77a370aee974627be1c285b3b"
+      }
+    },
+    {
+      "identity" : "tree-sitter-pageflow",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Vsevolond/tree-sitter-pageflow.git",
+      "state" : {
+        "revision" : "5076d24679dd48b4213166d9d50c9c767b3c6ad6",
+        "version" : "0.1.1"
       }
     },
     {

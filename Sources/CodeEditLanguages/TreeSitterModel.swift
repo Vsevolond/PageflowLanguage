@@ -102,6 +102,8 @@ public class TreeSitterModel {
             return yamlQuery
         case .zig:
             return zigQuery
+        case .pageflow:
+            return pageflowQuery
         case .plainText:
             return nil
         }
@@ -290,6 +292,11 @@ public class TreeSitterModel {
     /// Query for `Zig` files.
     public private(set) lazy var zigQuery: Query? = {
         return queryFor(.zig)
+    }()
+    
+    /// Query for `PageFlow` files
+    public private(set) lazy var pageflowQuery: Query? = {
+        return queryFor(.pageflow)
     }()
 
     private func queryFor(_ codeLanguage: CodeLanguage) -> Query? {

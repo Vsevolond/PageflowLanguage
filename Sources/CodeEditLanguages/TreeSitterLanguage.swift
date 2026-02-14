@@ -51,4 +51,5 @@ public enum TreeSitterLanguage: String {
     case yaml
     case zig
     case plainText
+    case pageflow
 }

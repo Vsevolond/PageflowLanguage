@@ -169,6 +169,8 @@ public struct CodeLanguage {
             return tree_sitter_yaml()
         case .zig:
             return tree_sitter_zig()
+        case .pageflow:
+            return tree_sitter_pageflow()
         case .plainText:
             return nil
         }
