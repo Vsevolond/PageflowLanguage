@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		28B3F010290C207D000CD04D /* CodeLanguages_Container.h in Headers */ = {isa = PBXBuildFile; fileRef = 28B3F00F290C207D000CD04D /* CodeLanguages_Container.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3BE73E42F40AE0D003B7239 /* TreeSitterPageflow in Frameworks */ = {isa = PBXBuildFile; productRef = D3BE73E32F40AE0D003B7239 /* TreeSitterPageflow */; };
+		D3294BE72F41D122007D0242 /* TreeSitterPageflow in Frameworks */ = {isa = PBXBuildFile; productRef = D3294BE62F41D122007D0242 /* TreeSitterPageflow */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,7 +21,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3BE73E42F40AE0D003B7239 /* TreeSitterPageflow in Frameworks */,
+				D3294BE72F41D122007D0242 /* TreeSitterPageflow in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,7 +89,7 @@
 			);
 			name = "CodeLanguages-Container";
 			packageProductDependencies = (
-				D3BE73E32F40AE0D003B7239 /* TreeSitterPageflow */,
+				D3294BE62F41D122007D0242 /* TreeSitterPageflow */,
 			);
 			productName = "CodeLanguages-Container";
 			productReference = 28B3F00C290C207D000CD04D /* CodeLanguages_Container.framework */;
@@ -120,7 +120,7 @@
 			);
 			mainGroup = 28B3F002290C207D000CD04D;
 			packageReferences = (
-				D3BE73E22F40AE0C003B7239 /* XCRemoteSwiftPackageReference "tree-sitter-pageflow" */,
+				D3294BE52F41D122007D0242 /* XCRemoteSwiftPackageReference "tree-sitter-pageflow" */,
 			);
 			productRefGroup = 28B3F00D290C207D000CD04D /* Products */;
 			projectDirPath = "";
@@ -370,20 +370,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		D3BE73E22F40AE0C003B7239 /* XCRemoteSwiftPackageReference "tree-sitter-pageflow" */ = {
+		D3294BE52F41D122007D0242 /* XCRemoteSwiftPackageReference "tree-sitter-pageflow" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Vsevolond/tree-sitter-pageflow.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.1.1;
+				minimumVersion = 0.1.2;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		D3BE73E32F40AE0D003B7239 /* TreeSitterPageflow */ = {
+		D3294BE62F41D122007D0242 /* TreeSitterPageflow */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D3BE73E22F40AE0C003B7239 /* XCRemoteSwiftPackageReference "tree-sitter-pageflow" */;
+			package = D3294BE52F41D122007D0242 /* XCRemoteSwiftPackageReference "tree-sitter-pageflow" */;
 			productName = TreeSitterPageflow;
 		};
 /* End XCSwiftPackageProductDependency section */

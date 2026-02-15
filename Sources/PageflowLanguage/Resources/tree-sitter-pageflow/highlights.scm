@@ -11,7 +11,6 @@
     "Divider"
     "Math"
     "Listing"
-    
 ] @constructor
 
 [
@@ -40,7 +39,6 @@
     "style"
     "frame"
     "numbers"
-    
 ] @function.builtin
 
 [
@@ -56,7 +54,6 @@
     "CodeLanguage"
     "CodeStyle"
     "CodeFrame"
-    
 ] @type.builtin
 
 (horizontal_alignment_value) @constant
@@ -77,13 +74,11 @@
 [
     (constant)
     (bool_type)
-    
 ] @constant.builtin
 
 [
     (add_operation)
     (mul_operation)
-    
 ] @operator
 
 [
@@ -91,13 +86,11 @@
     ")"
     "{"
     "}"
-    
 ] @punctuation.bracket
 
 [
     "."
     ","
-    
 ] @punctuation.delimiter
 
 (newline) @punctuation.special
