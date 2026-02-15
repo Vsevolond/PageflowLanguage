@@ -1,220 +1,220 @@
 (newpage_block
   "NewPage"
   "{"
-  (newpage_content)* @indent
-  "}" @dedent)
+  (newpage_content)* @indent.begin
+  "}" @indent.end)
 
 (section_block
   "Section"
-  "(" @indent
-  (text_arg_fragment)* @indent.align
-  ")" @dedent
+  "(" @indent.begin
+  (text_arg_fragment)* @indent.begin
+  ")" @indent.end
   "{"
-  (section_content)* @indent
-  "}" @dedent)
+  (section_content)* @indent.begin
+  "}" @indent.end)
 
 (subsection_block
   "SubSection"
-  "(" @indent
-  (text_arg_fragment)* @indent.align
-  ")" @dedent
+  "(" @indent.begin
+  (text_arg_fragment)* @indent.begin
+  ")" @indent.end
   "{"
-  (section_content)* @indent
-  "}" @dedent)
+  (section_content)* @indent.begin
+  "}" @indent.end)
   
 (section_newpage_block
   "NewPage"
   "{"
-  (section_newpage_content)* @indent
-  "}" @dedent)
+  (section_newpage_content)* @indent.begin
+  "}" @indent.end)
   
 (vstack_block
   "VStack"
   "{"
-  (content)* @indent
-  "}" @dedent)
+  (content)* @indent.begin
+  "}" @indent.end)
 
 (hstack_block
   "HStack"
   "{"
-  (content)* @indent
-  "}" @dedent)
+  (content)* @indent.begin
+  "}" @indent.end)
 
 (zstack_block
   "ZStack"
   "{"
-  (content)* @indent
-  "}" @dedent)
+  (content)* @indent.begin
+  "}" @indent.end)
   
 (text_block
   "Text"
   "{"
-  (text_fragment)* @indent
-  "}" @dedent)
+  (text_fragment)* @indent.begin
+  "}" @indent.end)
 
 (math_block
   "Math"
   "{"
-  (math_element)* @indent
-  "}" @dedent)
+  (math_element)* @indent.begin
+  "}" @indent.end)
   
-(newpage_modifier) @indent.align
-(vstack_modifier) @indent.align
-(hstack_modifier) @indent.align
-(zstack_modifier) @indent.align
-(text_modifier) @indent.align
-(math_modifier) @indent.align
-(image_modifier) @indent.align
-(divider_modifier) @indent.align
-(listing_modifier) @indent.align
+(newpage_modifier) @indent.begin
+(vstack_modifier) @indent.begin
+(hstack_modifier) @indent.begin
+(zstack_modifier) @indent.begin
+(text_modifier) @indent.begin
+(math_modifier) @indent.begin
+(image_modifier) @indent.begin
+(divider_modifier) @indent.begin
+(listing_modifier) @indent.begin
 
 (valignment_modifier
-  "(" @indent
-  (horizontal_alignment_type) @indent.align
-  ")" @dedent)
+  "(" @indent.begin
+  (horizontal_alignment_type) @indent.begin
+  ")" @indent.end)
   
 (halignment_modifier
-  "(" @indent
-  (vertical_alignment_type) @indent.align
-  ")" @dedent)
+  "(" @indent.begin
+  (vertical_alignment_type) @indent.begin
+  ")" @indent.end)
   
 (zalignment_modifier
-  "(" @indent
-  (alignment_type) @indent.align
-  ")" @dedent)
+  "(" @indent.begin
+  (alignment_type) @indent.begin
+  ")" @indent.end)
   
 (header_modifier
-  "(" @indent
-  (text_arg_fragment)* @indent.align
-  ")" @dedent)
+  "(" @indent.begin
+  (text_arg_fragment)* @indent.begin
+  ")" @indent.end)
   
 (footer_modifier
-  "(" @indent
-  (text_arg_fragment)* @indent.align
-  ")" @dedent)
+  "(" @indent.begin
+  (text_arg_fragment)* @indent.begin
+  ")" @indent.end)
   
 (width_modifier
-  "(" @indent
-  (expression) @indent.align
-  ")" @dedent)
+  "(" @indent.begin
+  (expression) @indent.begin
+  ")" @indent.end)
 
 (height_modifier
-  "(" @indent
-  (expression) @indent.align
-  ")" @dedent)
+  "(" @indent.begin
+  (expression) @indent.begin
+  ")" @indent.end)
   
 (layout_modifier
-  "(" @indent
-  (alignment_type) @indent.align
-  ")" @dedent)
+  "(" @indent.begin
+  (alignment_type) @indent.begin
+  ")" @indent.end)
   
 (padding_modifier
-  "(" @indent
-  (edge_type) @indent.align
-  "," @indent.branch
-  (expression) @indent.align
-  ")" @dedent)
+  "(" @indent.begin
+  (edge_type) @indent.begin
+  "," @indent.begin
+  (expression) @indent.begin
+  ")" @indent.end)
 
 (offset_modifier
-  "(" @indent
-  (axis_type) @indent.align
-  "," @indent.branch
-  (expression) @indent.align
-  ")" @dedent)
+  "(" @indent.begin
+  (axis_type) @indent.begin
+  "," @indent.begin
+  (expression) @indent.begin
+  ")" @indent.end)
   
 (margin_modifier
-  "(" @indent
-  (edge_type) @indent.align
-  "," @indent.branch
-  (expression) @indent.align
-  ")" @dedent)
+  "(" @indent.begin
+  (edge_type) @indent.begin
+  "," @indent.begin
+  (expression) @indent.begin
+  ")" @indent.end)
   
 (enumerated_modifier
-  "(" @indent
-  (bool_type) @indent.align
-  ")" @dedent)
+  "(" @indent.begin
+  (bool_type) @indent.begin
+  ")" @indent.end)
   
 (caption_modifier
-  "(" @indent
-  (text_arg_fragment)* @indent.align
-  ")" @dedent)
+  "(" @indent.begin
+  (text_arg_fragment)* @indent.begin
+  ")" @indent.end)
   
 (subfigure_modifier
-  "(" @indent
-  (bool_type) @indent.align
-  ")" @dedent)
+  "(" @indent.begin
+  (bool_type) @indent.begin
+  ")" @indent.end)
   
 (spacing_modifier
-  "(" @indent
-  (expression) @indent.align
-  ")" @dedent)
+  "(" @indent.begin
+  (expression) @indent.begin
+  ")" @indent.end)
   
 (tint_modifier
-  "(" @indent
-  (color_type) @indent.align
-  ")" @dedent)
+  "(" @indent.begin
+  (color_type) @indent.begin
+  ")" @indent.end)
 
 (background_modifier
-  "(" @indent
-  (color_type) @indent.align
-  ")" @dedent)
+  "(" @indent.begin
+  (color_type) @indent.begin
+  ")" @indent.end)
   
 (text_alignment_modifier
-  "(" @indent
-  (horizontal_alignment_type) @indent.align
-  ")" @dedent)
+  "(" @indent.begin
+  (horizontal_alignment_type) @indent.begin
+  ")" @indent.end)
   
 (line_spacing_modifier
-  "(" @indent
-  (expression) @indent.align
-  ")" @dedent)
+  "(" @indent.begin
+  (expression) @indent.begin
+  ")" @indent.end)
   
 (underline_modifier
-  "(" @indent
-  (line_pattern_type) @indent.align
-  "," @indent.branch
-  (color_type) @indent.align
-  ")" @dedent)
+  "(" @indent.begin
+  (line_pattern_type) @indent.begin
+  "," @indent.begin
+  (color_type) @indent.begin
+  ")" @indent.end)
   
 (strikethrough_modifier
-  "(" @indent
-  (line_pattern_type) @indent.align
-  "," @indent.branch
-  (color_type) @indent.align
-  ")" @dedent)
+  "(" @indent.begin
+  (line_pattern_type) @indent.begin
+  "," @indent.begin
+  (color_type) @indent.begin
+  ")" @indent.end)
   
 (font_size_modifier
-  "(" @indent
-  (font_size_type) @indent.align
-  ")" @dedent)
+  "(" @indent.begin
+  (font_size_type) @indent.begin
+  ")" @indent.end)
   
 (font_style_modifier
-  "(" @indent
-  (font_style_type) @indent.align
-  ")" @dedent)
+  "(" @indent.begin
+  (font_style_type) @indent.begin
+  ")" @indent.end)
   
 (code_language_modifier
-  "(" @indent
-  (code_language_type) @indent.align
-  ")" @dedent)
+  "(" @indent.begin
+  (code_language_type) @indent.begin
+  ")" @indent.end)
   
 (code_style_modifier
-  "(" @indent
-  (code_style_type) @indent.align
-  ")" @dedent)
+  "(" @indent.begin
+  (code_style_type) @indent.begin
+  ")" @indent.end)
   
 (code_frame_modifier
-  "(" @indent
-  (code_frame_type) @indent.align
-  ")" @dedent)
+  "(" @indent.begin
+  (code_frame_type) @indent.begin
+  ")" @indent.end)
   
 (code_numbers_modifier
-  "(" @indent
-  (bool_type) @indent.align
-  ")" @dedent)
+  "(" @indent.begin
+  (bool_type) @indent.begin
+  ")" @indent.end)
 
 (expression
-  (add_operation)) @indent.branch
+  (add_operation)) @indent.begin
 
 (expression
-  (mul_operation)) @indent.branch
+  (mul_operation)) @indent.begin
