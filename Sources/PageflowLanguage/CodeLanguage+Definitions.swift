@@ -33,7 +33,7 @@ public extension CodeLanguage {
         lineCommentString: "",
         rangeCommentStrings: ("", ""),
         documentationCommentStrings: [],
-        highlights: ["folds", "locals", "tags"]
+        highlights: ["folds", "indents", "locals", "tags"]
     )
 }
 
