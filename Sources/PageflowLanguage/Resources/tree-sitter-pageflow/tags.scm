@@ -4,13 +4,13 @@
 (section_block
   "Section"
   "("
-  (text_arg_fragment)* @name
+  (text_content) @name
   ")") @definition.class
 
 (subsection_block
   "SubSection"
   "("
-  (text_arg_fragment)* @name
+  (text_content) @name
   ")") @definition.method
   
 (section_newpage_block

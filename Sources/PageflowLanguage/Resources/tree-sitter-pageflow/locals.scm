@@ -5,8 +5,8 @@
 (subsection_block) @local.scope
 (section_newpage_block) @local.scope
 
-(section_block (text_arg_fragment)* @local.definition)
-(subsection_block (text_arg_fragment)* @local.definition)
+(section_block (text_content) @local.definition)
+(subsection_block (text_content) @local.definition)
 
 (vstack_block) @local.scope
 (hstack_block) @local.scope

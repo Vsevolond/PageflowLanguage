@@ -7,7 +7,7 @@
 (section_block
   "Section"
   "(" @indent.begin
-  (text_arg_fragment) @indent.align
+  (text_content)
   ")" @indent.end
   "{" @indent.begin
   (section_content) @indent.align
@@ -16,7 +16,7 @@
 (subsection_block
   "SubSection"
   "(" @indent.begin
-  (text_arg_fragment) @indent.align
+  (text_content)
   ")" @indent.end
   "{" @indent.begin
   (section_content) @indent.align
@@ -49,14 +49,26 @@
 (text_block
   "Text"
   "{" @indent.begin
-  (text_fragment) @indent.align
+  (text_content)
   "}" @indent.end)
 
 (math_block
   "Math"
   "{" @indent.begin
-  (math_element) @indent.align
+  (math_content)
   "}" @indent.end)
+
+(text_content
+  (text_fragment) @indent.align)
+
+(text_fragment
+  (newline) @indent.branch)
+
+(math_content
+  (math_fragment) @indent.align)
+
+(math_fragment
+  (newline) @indent.branch)
 
 (newpage_modifier "." @indent.auto)
 (vstack_modifier "." @indent.auto)
@@ -85,12 +97,12 @@
   
 (header_modifier
   "(" @indent.begin
-  (text_arg_fragment) @indent.align
+  (text_content)
   ")" @indent.end)
   
 (footer_modifier
   "(" @indent.begin
-  (text_arg_fragment) @indent.align
+  (text_content)
   ")" @indent.end)
   
 (width_modifier
@@ -136,7 +148,7 @@
   
 (caption_modifier
   "(" @indent.begin
-  (text_arg_fragment) @indent.align
+  (text_content)
   ")" @indent.end)
   
 (subfigure_modifier

@@ -1,45 +1,45 @@
 [
-    "NewPage"
-    "Section"
-    "SubSection"
-    "VStack"
-    "HStack"
-    "ZStack"
-    "Text"
-    "Image"
-    "Spacer"
-    "Divider"
-    "Math"
-    "Listing"
-] @constructor
+  "NewPage"
+  "Section"
+  "SubSection"
+  "VStack"
+  "HStack"
+  "ZStack"
+  "Text"
+  "Image"
+  "Spacer"
+  "Divider"
+  "Math"
+  "Listing"
+] @block
 
 [
-    "alignment"
-    "header"
-    "footer"
-    "width"
-    "height"
-    "layout"
-    "padding"
-    "offset"
-    "margin"
-    "enumerated"
-    "caption"
-    "subfigure"
-    "spacing"
-    "tint"
-    "background"
-    "textAlignment"
-    "lineSpacing"
-    "underline"
-    "strikethrough"
-    "fontSize"
-    "fontStyle"
-    "language"
-    "style"
-    "frame"
-    "numbers"
-] @function.builtin
+  "alignment"
+  "header"
+  "footer"
+  "width"
+  "height"
+  "layout"
+  "padding"
+  "offset"
+  "margin"
+  "enumerated"
+  "caption"
+  "subfigure"
+  "spacing"
+  "tint"
+  "background"
+  "textAlignment"
+  "lineSpacing"
+  "underline"
+  "strikethrough"
+  "fontSize"
+  "fontStyle"
+  "language"
+  "style"
+  "frame"
+  "numbers"
+] @modifier
 
 [
     "Color"
@@ -54,52 +54,32 @@
     "CodeLanguage"
     "CodeStyle"
     "CodeFrame"
-] @type.builtin
+] @type
 
-(horizontal_alignment_value) @constant
-(vertical_alignment_value) @constant
-(alignment_value) @constant
-(edge_value) @constant
-(axis_value) @constant
-(color_value) @constant
-(line_pattern_value) @constant
-(font_size_value) @constant
-(font_style_value) @constant
-(code_language_value) @constant
-(code_style_value) @constant
-(code_frame_value) @constant
+[
+  (horizontal_alignment_value)
+  (vertical_alignment_value)
+  (alignment_value)
+  (edge_value)
+  (axis_value)
+  (color_value)
+  (line_pattern_value)
+  (font_size_value)
+  (font_style_value)
+  (code_language_value)
+  (code_style_value)
+  (code_frame_value)
+] @type.value
 
 (number) @number
+(constant) @constant
+(bool_type) @boolean
 
-[
-    (constant)
-    (bool_type)
-] @constant.builtin
-
-[
-    (add_operation)
-    (mul_operation)
-] @operator
-
-[
-    "("
-    ")"
-    "{"
-    "}"
-] @punctuation.bracket
-
-[
-    "."
-    ","
-] @punctuation.delimiter
-
-(newline) @punctuation.special
-(math_separator) @punctuation.special
+(newline) @text.separator
+(text_delimiter) @text.delimiter
+(math_delimiter) @math.delimiter
 
 (raw_text) @string
-(raw_arg_text) @string
+(math_text) @string.math
 
-(math_text) @string.special
-(math_inline_text) @string.special
-
-(file_name) @string.special
+(file_name) @string.file
