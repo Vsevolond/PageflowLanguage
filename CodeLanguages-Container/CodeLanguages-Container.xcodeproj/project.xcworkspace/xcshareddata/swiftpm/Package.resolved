@@ -6,8 +6,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Vsevolond/tree-sitter-pageflow.git",
       "state" : {
-        "revision" : "0bb1ddc9e177e5fa9556cfaafa1f9a5e517fa472",
-        "version" : "0.1.7"
+        "revision" : "171778644b00dc046fa4940369e6b98cc00b995f",
+        "version" : "0.1.8"
       }
     }
   ],
