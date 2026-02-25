@@ -42,21 +42,6 @@
 ] @modifier
 
 [
-    "Color"
-    "Alignment"
-    "HorizontalAlignment"
-    "VerticalAlignment"
-    "Edge"
-    "Axis"
-    "FontSize"
-    "FontStyle"
-    "LinePattern"
-    "CodeLanguage"
-    "CodeStyle"
-    "CodeFrame"
-] @type
-
-[
   (horizontal_alignment_value)
   (vertical_alignment_value)
   (alignment_value)
@@ -83,3 +68,7 @@
 (math_text) @string.math
 
 (file_name) @string.file
+
+(invalid_constant) @invalid
+(invalid_number) @invalid
+(invalid_value) @invalid

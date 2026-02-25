@@ -120,24 +120,39 @@
   (alignment_type) @indent.align
   ")" @indent.end)
   
-(padding_modifier
+(padding_modifier_full
   "(" @indent.begin
-  (edge_type) @indent.align
+  (expression) @indent.align
   "," @indent.branch
+  (edge_type) @indent.align
+  ")" @indent.end)
+  
+(padding_modifier_default
+  "(" @indent.begin
   (expression) @indent.align
   ")" @indent.end)
 
-(offset_modifier
+(offset_modifier_full
   "(" @indent.begin
-  (axis_type) @indent.align
+  (expression) @indent.align
   "," @indent.branch
+  (axis_type) @indent.align
+  ")" @indent.end)
+  
+(offset_modifier_default
+  "(" @indent.begin
   (expression) @indent.align
   ")" @indent.end)
   
-(margin_modifier
+(margin_modifier_full
   "(" @indent.begin
-  (edge_type) @indent.align
+  (expression) @indent.align
   "," @indent.branch
+  (edge_type) @indent.align
+  ")" @indent.end)
+  
+(margin_modifier_default
+  "(" @indent.begin
   (expression) @indent.align
   ")" @indent.end)
   
@@ -181,18 +196,28 @@
   (expression) @indent.align
   ")" @indent.end)
   
-(underline_modifier
+(underline_modifier_full
   "(" @indent.begin
   (line_pattern_type) @indent.align
   "," @indent.branch
   (color_type) @indent.align
   ")" @indent.end)
   
-(strikethrough_modifier
+(underline_modifier_default
+  "(" @indent.begin
+  (line_pattern_type) @indent.align
+  ")" @indent.end)
+  
+(strikethrough_modifier_full
   "(" @indent.begin
   (line_pattern_type) @indent.align
   "," @indent.branch
   (color_type) @indent.align
+  ")" @indent.end)
+  
+(strikethrough_modifier_default
+  "(" @indent.begin
+  (line_pattern_type) @indent.align
   ")" @indent.end)
   
 (font_size_modifier
