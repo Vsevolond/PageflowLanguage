@@ -71,3 +71,4 @@
 (invalid_constant) @invalid
 (invalid_number) @invalid
 (invalid_value) @invalid
+(invalid_type) @invalid

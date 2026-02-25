@@ -49,13 +49,13 @@
 (text_block
   "Text"
   "{" @indent.begin
-  (text_content)
+  (text_content) @indent.align
   "}" @indent.end)
 
 (math_block
   "Math"
   "{" @indent.begin
-  (math_content)
+  (math_content) @indent.align
   "}" @indent.end)
 
 (text_content
