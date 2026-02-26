@@ -50,8 +50,6 @@
   (line_pattern_value)
   (font_size_value)
   (font_style_value)
-  (code_language_value)
-  (code_style_value)
   (code_frame_value)
 ] @type.value
 
@@ -67,6 +65,7 @@
 (math_text) @string.math
 
 (file_name) @string.file
+(identifier) @string.identifier
 
 (invalid_constant) @invalid
 (invalid_number) @invalid

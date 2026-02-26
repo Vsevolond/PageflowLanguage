@@ -19,6 +19,7 @@
 (listing_element (file_name) @local.definition)
 
 (constant) @local.reference
+(identifier) @local.reference
 
 (horizontal_alignment_value) @local.reference
 (vertical_alignment_value) @local.reference
@@ -33,6 +34,4 @@
 (font_size_value) @local.reference
 (font_style_value) @local.reference
 
-(code_language_value) @local.reference
-(code_style_value) @local.reference
 (code_frame_value) @local.reference

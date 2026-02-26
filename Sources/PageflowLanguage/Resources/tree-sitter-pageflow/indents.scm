@@ -207,12 +207,12 @@
   
 (code_language_modifier
   "(" @indent.begin
-  (code_language_type) @indent.align
+  (identifier) @indent.align
   ")" @indent.end)
   
 (code_style_modifier
   "(" @indent.begin
-  (code_style_type) @indent.align
+  (identifier) @indent.align
   ")" @indent.end)
   
 (code_frame_modifier

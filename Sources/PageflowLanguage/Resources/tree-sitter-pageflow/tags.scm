@@ -52,3 +52,4 @@
 (constant) @reference.variable
 
 (file_name) @reference.call
+(identifier) @reference.call
